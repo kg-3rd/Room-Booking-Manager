@@ -1,4 +1,54 @@
 # Room-Booking-Manager
 ## Team Threshold
 This software is being developed to optimize organizational facilities and reinvent the employee meeting journey to drive overall productivity utilization and improvement. 
+
+## Demo Video
+<a href=" ">Threshold-Demo1</a>
+
+ ## SRS Document
+<a href=" ">Functional Requirements</a>
+
+## Project Management Tool
+<a href=" ">Clickup</a>
+
+## Team Members
+> <b>Abubakar Darki (Leader): </b> <br>
+ * <a href=""> GitHub  Profile  Page</a><br>
+ * <a href=""> LinkedIn  Account </a><br>
+ * <a href=""> GitHub  Account </a><br>
+ <details>
+  <summary><b>Description</b></summary>
+ </details>
+ 
+> <b>Katlego Sekgethela: </b> <br>
+ * <a href=""> GitHub  Profile  Page</a><br>
+ * <a href=""> LinkedIn  Account </a><br>
+ * <a href=""> GitHub  Account </a><br>
+ <details>
+  <summary><b>Description</b></summary>
+ </details>
+ 
+> <b>Emmanuel Khoza: </b> <br>
+ * <a href=""> GitHub  Profile  Page</a><br>
+ * <a href=""> LinkedIn  Account </a><br>
+ * <a href=""> GitHub  Account </a><br>
+ <details>
+  <summary><b>Description</b></summary>
+ </details>
+ 
+> <b>Kgothalang Moifo: </b> <br>
+ * <a href=""> GitHub  Profile  Page</a><br>
+ * <a href=""> LinkedIn  Account </a><br>
+ * <a href=""> GitHub  Account </a><br>
+ <details>
+  <summary><b>Description</b></summary>
+ </details>
+ 
+> <b>Tshepang Mogaila: </b> <br>
+ * <a href=""> GitHub  Profile  Page</a><br>
+ * <a href=""> LinkedIn  Account </a><br>
+ * <a href=""> GitHub  Account </a><br>
+ <details>
+  <summary><b>Description</b></summary>
+ </details>
  
