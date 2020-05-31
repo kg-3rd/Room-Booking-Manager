@@ -9,7 +9,7 @@ This software is being developed to optimize organizational facilities and reinv
 <a href=" ">Functional Requirements</a>
 
 ## Project Management Tool
-<a href=" https://app.clickup.com/2545184/home/landing ">Clickup</a>
+* <a href="https://app.clickup.com/2545184/home/landing">Clickup</a>
 
 ## Team Members
 > <b>Abubakar Darki (Leader): </b> <br>
