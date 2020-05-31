@@ -21,9 +21,9 @@ This software is being developed to optimize organizational facilities and reinv
  </details>
  
 > <b>Katlego Sekgethela: </b> <br>
- * <a href=""> GitHub  Profile  Page</a><br>
- * <a href=""> LinkedIn  Account </a><br>
- * <a href=""> GitHub  Account </a><br>
+ * <a href="https://katlegokt38.github.io/"> GitHub  Profile  Page</a><br>
+ * <a href="https://www.linkedin.com/in/katlego-sekgethela-a751a31a5"> LinkedIn  Account </a><br>
+ * <a href="https://github.com/Katlegokt38"> GitHub  Account </a><br>
  <details>
   <summary><b>Description</b></summary>
  </details>
