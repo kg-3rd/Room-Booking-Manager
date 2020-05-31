@@ -9,21 +9,21 @@ This software is being developed to optimize organizational facilities and reinv
 <a href=" ">Functional Requirements</a>
 
 ## Project Management Tool
-<a href=" ">Clickup</a>
+<a href=" https://app.clickup.com/2545184/home/landing ">Clickup</a>
 
 ## Team Members
 > <b>Abubakar Darki (Leader): </b> <br>
- * <a href=""> GitHub  Profile  Page</a><br>
- * <a href=""> LinkedIn  Account </a><br>
- * <a href=""> GitHub  Account </a><br>
+ * <a href="https://abu-22.github.io/"> GitHub  Profile  Page</a><br>
+ * <a href="https://www.linkedin.com/in/abubakar-darki-7567781a9/"> LinkedIn  Account </a><br>
+ * <a href="https://github.com/Abu-22"> GitHub  Account </a><br>
  <details>
-  <summary><b>Description</b></summary>
+  <summary><b>3rd year Computer science student at University of Pretoria</b></summary>
  </details>
  
 > <b>Katlego Sekgethela: </b> <br>
- * <a href="https://katlegokt38.github.io/"> GitHub  Profile  Page</a><br>
- * <a href="https://www.linkedin.com/in/katlego-sekgethela-a751a31a5"> LinkedIn  Account </a><br>
- * <a href="https://github.com/Katlegokt38"> GitHub  Account </a><br>
+ * <a href=""> GitHub  Profile  Page</a><br>
+ * <a href=""> LinkedIn  Account </a><br>
+ * <a href=""> GitHub  Account </a><br>
  <details>
   <summary><b>Description</b></summary>
  </details>
