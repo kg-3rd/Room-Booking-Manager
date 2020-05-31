@@ -17,7 +17,7 @@ This software is being developed to optimize organizational facilities and reinv
  * <a href="https://www.linkedin.com/in/abubakar-darki-7567781a9/"> LinkedIn  Account </a><br>
  * <a href="https://github.com/Abu-22"> GitHub  Account </a><br>
  <details>
-  <summary><b>3rd year Computer science student at University of Pretoria</b></summary>
+  <summary><b>Description</b></summary>
  </details>
  
 > <b>Katlego Sekgethela: </b> <br>
