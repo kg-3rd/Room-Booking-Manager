@@ -45,9 +45,9 @@ This software is being developed to optimize organizational facilities and reinv
  </details>
  
 > <b>Tshepang Mogaila: </b> <br>
- * <a href=""> GitHub  Profile  Page</a><br>
- * <a href=""> LinkedIn  Account </a><br>
- * <a href=""> GitHub  Account </a><br>
+ * <a href="teeldinho.github.io"> GitHub  Profile  Page</a><br>
+ * <a href="https://www.linkedin.com/in/mr-tshepang-mogaila"> LinkedIn  Account </a><br>
+ * <a href="https://github.com/teeldinho"> GitHub  Account </a><br>
  <details>
   <summary><b>Description</b></summary>
  </details>
