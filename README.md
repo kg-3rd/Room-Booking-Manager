@@ -7,7 +7,7 @@ This software is being developed to optimize organizational facilities and reinv
 
  ## SRS Document
 <a href="https://drive.google.com/file/d/16A_46CrvaJnDazlCYjJsJ8I7q8vuzfLw/view?usp=sharing">Functional Requirements</a>
-
+<a href="https://www.overleaf.com/read/gjhpfhgkwpbh">Functional Requirements Overleaf</a>
 ## Project Management Tool
 * <a href="https://app.clickup.com/2545184/home/landing">Clickup</a>
 
