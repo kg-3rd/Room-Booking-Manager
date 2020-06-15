@@ -6,8 +6,8 @@ This software is being developed to optimize organizational facilities and reinv
 <a href="https://drive.google.com/file/d/1CGxY2X6Tl_v756sPZwsO1dVit0Fvkuw8/view?usp=sharing ">Threshold-Demo1</a>
 
  ## SRS Document
-<a href="https://drive.google.com/file/d/16A_46CrvaJnDazlCYjJsJ8I7q8vuzfLw/view?usp=sharing">Functional Requirements</a>
-<a href="https://www.overleaf.com/read/gjhpfhgkwpbh">Functional Requirements Overleaf</a>
+<a href="https://www.overleaf.com/read/gjhpfhgkwpbh">Functional Requirements Overleaf</a><br>
+<a href="https://drive.google.com/file/d/16A_46CrvaJnDazlCYjJsJ8I7q8vuzfLw/view?usp=sharing">Functional Requirements Google Drive</a>
 ## Project Management Tool
 * <a href="https://app.clickup.com/2545184/home/landing">Clickup</a>
 
