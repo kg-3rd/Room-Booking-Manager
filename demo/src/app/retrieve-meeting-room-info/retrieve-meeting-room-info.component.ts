@@ -1,0 +1,72 @@
+import { MatDialog,MatDialogConfig } from '@angular/material/dialog';
+import { Component, OnInit, AfterViewInit, ViewChild, Renderer2 } from '@angular/core';
+import { apiService } from '../services/api.service';
+import {Room} from '../classes/room';
+import { AddMeetingRoomInfoComponent } from '../add-meeting-room-info/add-meeting-room-info.component';
+import { EditMeetingRoomInfoComponent } from '../edit-meeting-room-info/edit-meeting-room-info.component';
+
+@Component({
+  selector: 'app-retrieve-meeting-room-info',
+  templateUrl: './retrieve-meeting-room-info.component.html',
+  styleUrls: ['./retrieve-meeting-room-info.component.css']
+})
+export class RetrieveMeetingRoomInfoComponent implements OnInit,AfterViewInit {
+  @ViewChild('data') data;
+  constructor(private apiDB: apiService, private dialog:MatDialog, private renderer2:Renderer2) { }
+  //constructor(private apiDB: apiService, private renderer2:Renderer2) { }
+  listComments:Room[];
+  ngOnInit(): void {
+    this.apiDB.getRooms()
+    .subscribe (
+      data=>{
+       this.listComments=data;//type casting into the  form listed in comments.ts
+       console.log('Response2', data);
+      }
+
+    );
+  }
+  ngAfterViewInit(){
+    console.log(this.data.nativeElement);
+    //this.renderer2.appendChild(this.data.nativeElement,this.renderer2.createText("testing"));
+  }
+  edit(id:number)
+  {
+    var formData=new Room();
+    formData.roomID=id;
+    this.apiDB.getRecord(formData)
+    .subscribe(
+      data=>{
+        console.log('Response post', data);
+      });
+        //window.location.reload();
+        //this.ngOnInit();
+    const editDialog=new MatDialogConfig();
+    editDialog.backdropClass="backGround";
+    // configDialog.width='700px';
+    // configDialog.height='400px';
+    this.dialog.open(EditMeetingRoomInfoComponent,editDialog);
+  }
+  delete(id:number){
+    if(confirm(`Are you sure to delete Room number ${id}`)) {
+      console.log("Implement delete functionality here");
+      var formData=new Room();
+      formData.roomID=id;
+      this.apiDB.delete(formData)
+      .subscribe(
+        data=>{
+          console.log('Response post', data);
+        });
+        window.location.reload();
+        //this.ngOnInit();
+    }
+  }
+
+  onCreate(){
+    const configDialog=new MatDialogConfig();
+    configDialog.backdropClass="backGround";
+    // configDialog.width='700px';
+    // configDialog.height='400px';
+    this.dialog.open(AddMeetingRoomInfoComponent,configDialog);
+    // window.location.reload();
+  }
+}
