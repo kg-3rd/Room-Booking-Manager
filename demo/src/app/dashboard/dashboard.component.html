@@ -1,0 +1,21 @@
+<nav>
+    <ul class="horizontal">
+        <li><a class="active" href="#home">RB Dashboard</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li id="logout"><a routerLink="">Logout</a></li>
+    </ul>
+  </nav>
+  <div class="sidenav">
+    <div id=sideLinks>
+      <h2 id="h2">Meeting Room</h2>
+      <a class="MR" (click)="retrieve()" >Meeting room Information</a>
+      <!-- routerLink="/retrieve-meeting-room-info" -->
+      <h2 id="h2">AI</h2>
+      <a href="#">Set Rules</a>
+    </div>
+  </div>
+  <div id="routerPosition">
+    <div id="toCenter">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
