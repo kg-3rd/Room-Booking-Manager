@@ -1,0 +1,23 @@
+<h2>Meeting Room Information</h2>
+<div #data>
+    <button (click)="onCreate()" id="create">Add new Room</button>
+    <table class="tableRoom">
+        <tr>
+            <th>Meeting Room number</th>
+            <th>Floor Number</th>
+            <th>Amenity</th>
+            <th>Number of seats</th>
+            <th>Distance</th>
+        </tr>
+        <tr *ngFor="let com of listComments">
+            <td attr.class="{{com.roomID}}">{{com.roomID}}</td>
+            <td attr.class="{{com.roomID}}">{{com.FloorNumber}}</td>
+            <td attr.class="{{com.roomID}}">{{com.Amenities}}</td>
+            <td attr.class="{{com.roomID}}">{{com.numParticipants}}</td>
+            <td attr.class="{{com.roomID}}">{{com.Distance}}</td>
+            <td attr.class="{{com.roomID}}"><button (click)="delete(com.roomID)">delete</button></td>
+            <td><button (click)="edit(com.roomID)">delete</button></td>
+        </tr>
+       
+    </table>
+</div>
