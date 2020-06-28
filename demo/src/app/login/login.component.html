@@ -80,7 +80,7 @@
               <div class="form-group">
                 <button class="btn btn-primary" [disabled]="registerForm.get('firstname').invalid || registerForm.get('lastname').invalid || registerForm.get('email').invalid || registerForm.get('officeID').invalid" type="submit" >Submit</button><br><br>
                 <p *ngIf="buttonReg != '' && _exist" class="alert alert-danger"> 
-                User I.D already exists             
+                User I.D already exists!           
                 </p> 
               </div>
               </form>
