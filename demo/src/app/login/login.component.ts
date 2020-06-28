@@ -52,8 +52,10 @@ export class LoginComponent implements OnInit {
   lstcomments:Comments[];
   users:User[];
   myForm = "login";
+  tab:string;
   ngOnInit()
   {
+    this.tab = "Register";
     this.myForm = "login";
     this._apiService.getcomments()
     .subscribe
@@ -76,15 +78,18 @@ export class LoginComponent implements OnInit {
     )
    
   }
+  
   switch()
   {
     if(this.myForm == "login")
     {
       this.myForm = "register";
+      this.tab = "Login";
     }
     else if(this.myForm == "register")
     {
       this.myForm = "login";
+      this.tab = "Register";
     }
   }
   _username:string;

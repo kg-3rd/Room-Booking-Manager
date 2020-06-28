@@ -76,11 +76,11 @@ export class apiService
         return this.httpclient.post("http://localhost:65000/",obj);
     }
 
-    update(postedData:Room):Observable<any>{
+    updateRoom(postedData:Room):Observable<any>{
         
         let obj={
             table:"FloorPlan",
-            request:"delete",
+            request:"update",
             data:postedData
         };
         return this.httpclient.post("http://localhost:65000/",obj);

@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HttpClientModule } from '@angular/common/http';
 import { apiService } from './services/api.service';
+import { roomsService } from './services/rooms.service';
 import { MaterialModule } from './material/material.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Route } from '@angular/compiler/src/core';
@@ -37,7 +38,7 @@ import { EditMeetingRoomInfoComponent } from './edit-meeting-room-info/edit-meet
     HttpClientModule,
     MaterialModule
   ],
-  providers: [apiService],
+  providers: [apiService,roomsService],
   bootstrap: [AppComponent],
   entryComponents:[AddMeetingRoomInfoComponent,EditMeetingRoomInfoComponent]
 })

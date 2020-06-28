@@ -11,12 +11,12 @@
         </tr>
         <tr *ngFor="let com of listComments">
             <td attr.class="{{com.roomID}}">{{com.roomID}}</td>
-            <td attr.class="{{com.roomID}}">{{com.FloorNumber}}</td>
-            <td attr.class="{{com.roomID}}">{{com.Amenities}}</td>
-            <td attr.class="{{com.roomID}}">{{com.numParticipants}}</td>
-            <td attr.class="{{com.roomID}}">{{com.Distance}}</td>
-            <td attr.class="{{com.roomID}}"><button (click)="delete(com.roomID)">delete</button></td>
-            <td><button (click)="edit(com.roomID)">delete</button></td>
+            <td attr.class="{{com.FloorNumber}}">{{com.FloorNumber}}</td>
+            <td attr.class="{{com.Amenities}}">{{com.Amenities}}</td>
+            <td attr.class="{{com.numParticipants}}">{{com.numParticipants}}</td>
+            <td attr.class="{{com.Distance}}">{{com.Distance}}</td>
+            <!-- <td></td> -->
+            <td><button (click)="delete(com.roomID)">delete</button>&nbsp;<button (click)="edit(com.roomID,com.FloorNumber,com.Amenities,com.numParticipants,com.Distance)">Edit</button></td>
         </tr>
        
     </table>

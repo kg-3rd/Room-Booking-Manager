@@ -1,6 +1,6 @@
 <div id="Center">
     <h1>Edit the Meeting Room details below</h1>
-    <form [formGroup]="RoomInfo" (ngSubmit)="">
+    <form [formGroup]="RoomInfo" (ngSubmit)="updateR()">
         <input placeholder="Room Number" id="n" type="text" formControlName="RoomNumber" >
         <br/>
         <input placeholder="Floor Number" id="s" type="text" formControlName="FloorNumber" >

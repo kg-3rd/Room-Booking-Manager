@@ -1,9 +1,11 @@
 import { MatDialog,MatDialogConfig } from '@angular/material/dialog';
 import { Component, OnInit, AfterViewInit, ViewChild, Renderer2 } from '@angular/core';
 import { apiService } from '../services/api.service';
+import { roomsService } from '../services/rooms.service';
 import {Room} from '../classes/room';
 import { AddMeetingRoomInfoComponent } from '../add-meeting-room-info/add-meeting-room-info.component';
 import { EditMeetingRoomInfoComponent } from '../edit-meeting-room-info/edit-meeting-room-info.component';
+
 
 @Component({
   selector: 'app-retrieve-meeting-room-info',
@@ -12,8 +14,17 @@ import { EditMeetingRoomInfoComponent } from '../edit-meeting-room-info/edit-mee
 })
 export class RetrieveMeetingRoomInfoComponent implements OnInit,AfterViewInit {
   @ViewChild('data') data;
-  constructor(private apiDB: apiService, private dialog:MatDialog, private renderer2:Renderer2) { }
+  constructor(private apiDB: apiService, private dialog:MatDialog, private renderer2:Renderer2, private mRoom:roomsService) { }
   //constructor(private apiDB: apiService, private renderer2:Renderer2) { }
+  
+  get getRoom():Room
+  {
+    return this.mRoom.myRoom;
+  }
+  set setRoom(_room:Room)
+  {
+    this.mRoom.myRoom = _room;
+  }
   listComments:Room[];
   ngOnInit(): void {
     this.apiDB.getRooms()
@@ -29,15 +40,20 @@ export class RetrieveMeetingRoomInfoComponent implements OnInit,AfterViewInit {
     console.log(this.data.nativeElement);
     //this.renderer2.appendChild(this.data.nativeElement,this.renderer2.createText("testing"));
   }
-  edit(id:number)
+  edit(id:number,floorNum:number,amenities:string,numParticipants:number,distance:number)
   {
     var formData=new Room();
-    formData.roomID=id;
-    this.apiDB.getRecord(formData)
-    .subscribe(
-      data=>{
-        console.log('Response post', data);
-      });
+    formData.roomID = id;
+    formData.FloorNumber = floorNum;
+    formData.Amenities = amenities;
+    formData.numParticipants = numParticipants;
+    formData.Distance = distance;
+    this.setRoom = formData;
+    // this.apiDB.getRecord(formData)
+    // .subscribe(
+    //   data=>{
+    //     console.log('Response post', data);
+    //   });
         //window.location.reload();
         //this.ngOnInit();
     const editDialog=new MatDialogConfig();
