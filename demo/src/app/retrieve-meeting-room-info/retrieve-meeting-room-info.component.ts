@@ -5,7 +5,7 @@ import { roomsService } from '../services/rooms.service';
 import {Room} from '../classes/room';
 import { AddMeetingRoomInfoComponent } from '../add-meeting-room-info/add-meeting-room-info.component';
 import { EditMeetingRoomInfoComponent } from '../edit-meeting-room-info/edit-meeting-room-info.component';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-retrieve-meeting-room-info',
@@ -14,7 +14,7 @@ import { EditMeetingRoomInfoComponent } from '../edit-meeting-room-info/edit-mee
 })
 export class RetrieveMeetingRoomInfoComponent implements OnInit,AfterViewInit {
   @ViewChild('data') data;
-  constructor(private apiDB: apiService, private dialog:MatDialog, private renderer2:Renderer2, private mRoom:roomsService) { }
+  constructor(private _router: Router,private apiDB: apiService, private dialog:MatDialog, private renderer2:Renderer2, private mRoom:roomsService) { }
   //constructor(private apiDB: apiService, private renderer2:Renderer2) { }
   
   get getRoom():Room
@@ -27,6 +27,10 @@ export class RetrieveMeetingRoomInfoComponent implements OnInit,AfterViewInit {
   }
   listComments:Room[];
   ngOnInit(): void {
+    if(localStorage.getItem('loggedIn') == "false")
+    {
+      this._router.navigate(['login']);
+    }
     this.apiDB.getRooms()
     .subscribe (
       data=>{

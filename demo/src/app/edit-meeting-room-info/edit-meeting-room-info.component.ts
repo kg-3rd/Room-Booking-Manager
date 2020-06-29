@@ -5,6 +5,8 @@ import { roomsService } from '../services/rooms.service';
 import {Room} from '../classes/room';
 //import { MatDialogRef,MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-edit-meeting-room-info',
@@ -13,7 +15,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class EditMeetingRoomInfoComponent implements OnInit {
 
-  constructor(private apiDB: apiService,public dialogRef:MatDialogRef<EditMeetingRoomInfoComponent>,private mRoom:roomsService) { }
+  constructor(private _router: Router,private apiDB: apiService,public dialogRef:MatDialogRef<EditMeetingRoomInfoComponent>,private mRoom:roomsService) { }
   get getRoom():Room
   {
     return this.mRoom.myRoom;
@@ -29,6 +31,10 @@ export class EditMeetingRoomInfoComponent implements OnInit {
     return this.RoomInfo.get('RoomInfo');  
   } 
   ngOnInit(): void {
+    if(localStorage.getItem('loggedIn') == "false")
+    {
+      this._router.navigate(['login']);
+    }
     this.RoomInfo.controls['RoomNumber'].setValue(this.getRoom.roomID);
     this.RoomInfo.controls['FloorNumber'].setValue(this.getRoom.FloorNumber);
     this.RoomInfo.controls['Amenity'].setValue(this.getRoom.Amenities);

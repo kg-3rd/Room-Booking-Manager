@@ -12,11 +12,21 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     // this._router.navigate(['retrieve-meeting-room-info']);
+    if(localStorage.getItem('loggedIn') == "false")
+    {
+      this._router.navigate(['login']);
+    }
   }
 
   retrieve(): void
   {
     // this._router.navigate(['retrieve-meeting-room-info']);
     this._router.navigate(['dashboard/retrieve-meeting-room-info']);
+  }
+
+  logout():void
+  {
+    localStorage.setItem('loggedIn', "false");
+    console.log(localStorage.getItem('loggedIn'));
   }
 }

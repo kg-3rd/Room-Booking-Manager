@@ -117,6 +117,8 @@ export class LoginComponent implements OnInit {
         {
           console.log("Passwords match");
           this._match = true;
+          localStorage.setItem('loggedIn', "true");
+          console.log(localStorage.getItem('loggedIn'));
           this._router.navigate(['dashboard']);
         }
         else

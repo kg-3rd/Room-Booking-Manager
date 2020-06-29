@@ -14,16 +14,8 @@ export class AppComponent {
   constructor(private _router: Router){}
   ngOnInit()
   {
-    // this._apiService.getcomments()
-    // .subscribe
-    // (
-    //   data=>
-    //   {
-    //       this.lstcomments = data;//typecast data to list of comments 
-    //       console.log(this.lstcomments);
-    //   }
-    // )
-    // this._router.navigate(['login']);
+    localStorage.setItem('loggedIn', "false");
+    console.log("loca" + localStorage.getItem('loggedIn'));
   }
   // constructor(private _apiService: apiService, private _router: Router){}
   // form = new FormGroup({  

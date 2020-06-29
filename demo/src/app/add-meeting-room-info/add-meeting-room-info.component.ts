@@ -4,6 +4,7 @@ import { apiService } from '../services/api.service';
 import {Room} from '../classes/room';
 //import { MatDialogRef,MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatDialogRef } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-meeting-room-info',
@@ -13,7 +14,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 export class AddMeetingRoomInfoComponent implements OnInit {
 
   //constructor(private apiDB: apiService,public dialogRef:MatDialogRef<AddMeetingRoomInfoComponent>,@Inject(MAT_DIALOG_DATA) public data: any) { }
-  constructor(private apiDB: apiService,public dialogRef:MatDialogRef<AddMeetingRoomInfoComponent>) { }
+  constructor(private _router: Router,private apiDB: apiService,public dialogRef:MatDialogRef<AddMeetingRoomInfoComponent>) { }
   RoomInfo=new FormGroup({
     RoomNumber:new FormControl(''),
     FloorNumber:new FormControl(''),
@@ -22,6 +23,10 @@ export class AddMeetingRoomInfoComponent implements OnInit {
     Distance:new FormControl('')
   });
   ngOnInit(): void {
+    if(localStorage.getItem('loggedIn') == "false")
+    {
+      this._router.navigate(['login']);
+    }
   }
 
   onSubmit(){
