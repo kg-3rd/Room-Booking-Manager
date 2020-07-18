@@ -19,7 +19,7 @@ const routes: Routes =
     path:'dashboard',
     component:DashboardComponent,
     children: [
-      {path: ':retrieveroom', component: RetrieveMeetingRoomInfoComponent}
+      {path: 'retrieve-meeting-room-info', component: RetrieveMeetingRoomInfoComponent}
     ]
   }
   //,
